@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/mui.min.css" />
+	<script src="./js/mui-popup.js"></script>	
+</head>
+<body>
+<button id="confirmBtn">提示</button>
+<script>
+	document.getElementById("confirmBtn").addEventListener('click', function() {
+		var btnArray = ['否', '是'];
+		console.log(mui)
+		mui.alert('MUI是个好框？', 'title', function() {
+			console.log("执行")
+		})
+	});
+</script>
+</body>
+</html>
